@@ -1,3 +1,5 @@
+-- This code is on client-side
+
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RemoteEvent = ReplicatedStorage.DialogueSystem.DialogueRemoteEvent
 local EndRemoteEvent = ReplicatedStorage.DialogueSystem.EndDialogueRemoteEvent
@@ -75,6 +77,3 @@ end)
 game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui:GetPropertyChangedSignal("Enabled"):Connect(function()
 	SetGuiVisibility(script.Parent.Enabled)
 end)
-
-
-
